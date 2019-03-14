@@ -1,0 +1,115 @@
+html {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-color: black;
+}
+body {
+    font-family: font / code_light-webfont . woff2, 'code_lightregular', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+    width: 99%;
+    margin: 0 auto;
+    background-color: rgba(191, 232, 183, 0.84);
+
+}
+.namething
+{
+    font-family: 'bebas_neuebold';
+    font-size: 200%;
+}
+.namething2
+{
+    font-family: 'bebas_neuebold';
+    font-size: 150%;
+}
+.nav-item
+{
+    font-family: 'bebas_neuebold';
+}
+
+p
+{
+    font-family: Arial;
+
+}
+
+#namelist
+{
+    font-family: Arial;
+    text-align: left;
+    font-size: 100%;
+}
+#namelist2
+{
+    font-family: Arial;
+    text-align: right;
+    font-size: 100%;
+}
+#description
+{
+    font-family: Arial;
+    text-align: left;
+    font-size: 100%;
+}
+
+iframe {
+    width:100%;
+    float:right;
+}
+
+.clear {
+    clear:both;
+}
+
+#services h2
+{
+    color: #28a745;
+}
+
+#services h3
+{
+    color: #00ff13;
+}
+#services p
+{
+    text-align: center;
+}
+#resume
+{
+    background-image: url("../Images/resume3web.png");
+    background-size: 99%;
+    background-repeat: no-repeat;
+}
+
+#resumelink
+{
+    font-size: 50%;
+}
+
+#contact h2
+{
+    color: #00ff13;
+}
+
+#socialmedia
+{
+    margin:0 auto;
+    display:block;
+}
+#thumbnail
+{
+    float: left;
+}
+@media only screen and (max-width:960px)
+{
+    #thumbnail
+    {
+        display: none;
+    }
+}
+footer
+{
+    font-size: 50%;
+}

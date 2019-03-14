@@ -1,0 +1,387 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-image: url("../background3.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-color: black;
+}
+body {
+	font-family: font / code_light-webfont . woff2, 'code_lightregular', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 100%;
+	width: 99%;
+	max-width: 1250px;
+	margin: 0 auto;
+	background-color: rgba(191, 232, 183, 0.84);
+	transition: width 2s linear 1s;
+
+}
+p
+{
+ font-family: Arial;
+}
+
+.effect8
+{
+	position:relative;
+	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect8:before, .effect8:after
+{
+	content:"";
+	position:absolute;
+	z-index:-1;
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+	box-shadow:0 0 20px rgba(0,0,0,0.8);
+	top:10px;
+	bottom:10px;
+	left:0;
+	right:0;
+	-moz-border-radius:100px / 10px;
+	border-radius:100px / 10px;
+}
+.effect8:after
+{
+	right:10px;
+	left:auto;
+	-webkit-transform:skew(8deg) rotate(3deg);
+	-moz-transform:skew(8deg) rotate(3deg);
+	-ms-transform:skew(8deg) rotate(3deg);
+	-o-transform:skew(8deg) rotate(3deg);
+	transform:skew(8deg) rotate(3deg);
+
+}
+
+a:focus, a:hover {
+	font-style: italic;
+}
+/* the styles for the header */
+header {
+	padding: 1.5em 0 2em 0;
+}
+header h2 {
+	font-size: 175%;
+	color: #800000;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+header img {
+	float: left;
+	padding: 0 3.75%;
+}
+.shadow {
+	text-shadow: 2px 2px 2px #800000;
+}
+.dork img {float: right;}
+
+/* the styles for the navigation menu */
+#nav_menu
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	max-width:1250px;
+}
+#mobilemenu
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	max-width:960px;
+}
+
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+	width: 20%;
+
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #000000;
+    color: white;
+	font-size: x-large;
+	font-family: 'bebas_neuebold';
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul li a:hover
+{
+	background-color: #00ff13;
+	color:#000000;
+
+}
+#nav_menu ul ul li {
+	float: none;
+	width:100%;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* the styles for the main content */
+main {
+}
+table {
+	border-collapse: collapse;
+	border: none;
+}
+
+/* the styles for the section */
+section {
+	width: 50%;
+	float: right;
+	padding: 0 2.5% 0px 2.5%;
+}
+aside {
+	float: left;
+	width: 50%;
+	padding: 0 2.5% 0px 2.5%;
+}
+section h1 {
+	font-size: 150%;
+	padding: .5em 0 .25em 0;
+	margin: 0;
+}
+section h2 {
+	color: #2a8010;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+section p {
+	padding-bottom: .5em;
+}
+section blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+section ul {
+	padding: 0 0 .25em 1.25em;
+	list-style-type: circle;
+}
+section li {
+	padding-bottom: .35em;
+}
+
+/* the styles for the article */
+article {
+	padding: .5em 0;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+article h2 {
+	padding-top: 0;
+}
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+article img {
+	float: right;
+	max-width:40%;
+	min-width:150px;
+	margin: .5em 0 1em 1em;
+	border: 1px solid black;
+}
+
+/* the styles for the aside */
+
+aside h2 {
+	color: #800000;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+aside img {
+	padding-bottom: 1em;
+}
+
+/* the styles for the footer */
+footer {
+	background-color: #000000;
+	clear: both;
+
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
+
+.slicknav_menu{display:none;}
+
+ul
+{
+	padding: 0 0 .25em 1.25em;
+	list-style-type: circle;
+}
+
+
+/*********************Media Queries**********************/
+
+/*tablet portrait to standard 960*/
+@media only screen and (max-width:959px){
+	section h1{font-size:135%;}
+	section h2, aside h2{font-size:120%;}
+}
+
+/*mobile landscape to tablet portrait*/
+@media only screen and (max-width:767px){
+	header img{float:none;}
+	header{text-align:center;}
+	section{float:none; width:95%;}
+	aside{float:none; width:95%; padding-right:2.5%;}
+	article img{max-width:30%;}
+	#speakers{column-count:2;}
+	#nav_menu{display:none;}
+	.slicknav_menu{display:block; background-color: #000000 !important;}
+	.slicknav_btn{background-color: #000000 !important;}
+}
+
+/*mobile portrait to mobile landscape*/
+@media only screen and (max-width:479px){
+	body{font-size:90%;}
+}
+* {
+	box-sizing: border-box;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+	float: right;
+	width: 25%;
+	padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.column img:hover {
+	opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* The expanding image container */
+.container {
+	display: none;
+	z-index: -10;
+}
+
+/* Expanding image text */
+#imgtext {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	color: white;
+	font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	color: white;
+	font-size: 35px;
+	cursor: pointer;
+}
+
+div.gallery {
+	border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+	border: 1px solid #777;
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.responsive {
+	padding: 0 6px;
+	float: left;
+	width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+	.responsive {
+		width: 49.99999%;
+		margin: 6px 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.responsive {
+		width: 100%;
+	}
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+

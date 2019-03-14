@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>David Enersen Portfolio</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <link rel="stylesheet" href="../styles/gallery.css">
+    <link rel="shortcut icon" href="../Images/logo.png">
+    <script src="../js/gallery.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+        });
+    </script>
+
+</head>
+
+<body>
+<header>
+    <h1><img src="../Images/logo.png" alt="dragon logo" height="100"> David Enersen <br/> Digital Artist | Game Designer </h1>
+</header>
+<nav id="mobilemenu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/aboutme.html">About</a></li>
+        <li><a href="../pages/pictures.html" class="current">Art Portfolio</a></li>
+        <li><a href="../pages/projects.html">Game Projects</a></li>
+        <li><a href="#">Resume</a>
+            <ul>
+                <li><a href="../pages/resume.html">Web</a></li>
+                <li><a href="../docs/resume.pdf">Download</a></li>
+
+            </ul>
+        </li>
+    </ul>
+</nav>
+<main>
+
+<div class="row">
+    <div class="column">
+        <img src="../Images/dragon6copy.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="../Images/facebookavatar.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="../Images/oldfacebookavatar.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="../Images/otter.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="../Images/dragonade.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="../Images/kangaroosmoothrider2.png" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="../Images/okami2.png" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="../Images/smashcivilwar.png" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="../Images/undertale.png" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="../Images/exersize1.png" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="../Images/ianbarse.png" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="../Images/allconference24tanner.png" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+        <img src="../Images/seniorgamebasketball.png" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlides">
+            <div class="numbertext">1 / 13</div>
+            <img src="../Images/dragon6copy.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 13</div>
+            <img src="../Images/facebookavatar.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 13</div>
+            <img src="../Images/oldfacebookavatar.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 13</div>
+            <img src="../Images/otter.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 13</div>
+            <img src="../Images/dragonade.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 13</div>
+            <img src="../Images/kangaroosmoothrider2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">7/ 13</div>
+            <img src="../Images/okami2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">8 / 13</div>
+            <img src="../Images/smashcivilwar.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">9 / 13</div>
+            <img src="../Images/undertale.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">10 / 13</div>
+            <img src="../Images/exersize1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">11 / 13</div>
+            <img src="../Images/ianbarse.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">12 / 13</div>
+            <img src="../Images/allconference24tanner.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">13 / 13</div>
+            <img src="../Images/seniorgamebasketball.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+
+        <div class="column">
+            <img class="demo cursor" src="../Images/dragon6copy.png" style="width:100%" onclick="currentSlide(1)" alt="Kibo the Dragon">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="../Images/facebookavatar.png" style="width:100%" onclick="currentSlide(2)" alt="Persona 5 avatar">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="../Images/oldfacebookavatar.jpg" style="width:100%" onclick="currentSlide(3)" alt="Facebook Hello">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="../Images/otter.png" style="width:100%" onclick="currentSlide(4)" alt="Devan the Otter">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="../Images/dragonade.png" style="width:100%" onclick="currentSlide(5)" alt="Dragonade">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="../Images/kangaroosmoothrider2.png" style="width:100%" onclick="currentSlide(6)" alt="Kangaroo Smooth Rider">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="../Images/okami2.png" style="width:100%" onclick="currentSlide(7)" alt="Okami Poster">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="../Images/smashcivilwar.png" style="width:100%" onclick="currentSlide(8)" alt="Smash Civil War">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="../Images/undertale.png" style="width:100%" onclick="currentSlide(9)" alt="Undertale app icon">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="../Images/exersize1.png" style="width:100%" onclick="currentSlide(10)" alt="design odyssey 1">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="../Images/ianbarse.png" style="width:100%" onclick="currentSlide(11)" alt="Ian Barse Sports Card">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="../Images/allconference24tanner.png" style="width:100%" onclick="currentSlide(12)" alt="All Conference Sports Card">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="../Images/seniorgamebasketball.png" style="width:100%" onclick="currentSlide(13)" alt="Senior Basketball Sports Card">
+        </div>
+    </div>
+</div>
+</>
+<footer>
+
+    <div class="container">
+        <div class="category"><a href="https://dragonwithgames.deviantart.com/">
+            <img src="../logos/deviantart.png" alt="deviantart" style="width:50px;height:50px;border:0;"></div>
+        <div class="category">			<a href="https://www.linkedin.com/in/dkenersen/">
+            <img src="../logos/Linkedin.png" alt="linkedin" style="width:50px;height:50px;border:0;"></div>
+        <div class="category"><a href="https://www.facebook.com/dudewithaproduction/">
+            <img src="../logos/facebook.png" alt="facebook" style="width:50px;height:50px;border:0;"></div>
+        <div class="category">					<a href="https://twitter.com/dudewithgames">
+            <img src="../logos/twitter.png" alt="twitter" style="width:50px;height:50px;border:0;"></div>
+        <div class="category">
+            <a href="https://www.youtube.com/channel/UCA-ANbx2Q8gO7alII7wifdQ">
+                <img src="../logos/youtube.png" alt="youtube" style="width:50px;height:50px;border:0;"></div>
+    </div>
+    </a><p>2017 David Enersen</p>
+</footer>
+
+</body>
+</html>
